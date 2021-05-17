@@ -1,4 +1,4 @@
-# GAM_Cod-2021 🐟
+# Spatiotemporal-Cod 🐟
 
 This repository contains the R code used for the implementation and figure development described in the manuscript: 
 
