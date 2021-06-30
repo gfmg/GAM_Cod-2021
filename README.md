@@ -2,7 +2,7 @@
 
 This repository contains the R code used to implement the analysis and develop the figures included in the manuscript: 
 
-> "Estimating spatio-temporal distribution of fish and gear selectivity functions from pooled scientific survey and commercial fishing data"  
+> "Gonzalez, G.M., Wiff, R., Marshall C.T., Cornulier, T. 2021. Estimating spatio-temporal distribution of fish and gear selectivity functions from pooled scientific survey and commercial fishing data"  
 
 As a guide: 
 * Files starting with "M", includes scripts related with the Model implementation.
