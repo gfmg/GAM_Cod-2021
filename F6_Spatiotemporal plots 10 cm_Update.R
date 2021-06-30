@@ -21,20 +21,18 @@ library(maptools)
 #require(maptools)
 
 #Load model
-load(file.path("C:/Users/ggonzales/Dropbox/GAM_cod_MS/Data_Clean_Model",
+load(file.path(".",
                "MODELS1.3.2.RData"))
 
 #Load prediction dataset
-load(file.path("C:/Users/ggonzales/Dropbox/GAM_cod_MS/Data_Clean_Model",
+load(file.path(".",
                "prediction.data.Rdata"))
 
 # Shapefiles:
-UK<-readRDS(file.path("C:/Users/ggonzales/Dropbox/GAM_cod_MS/",
-                       "Data_Clean_Model/geoData","GADM_2.8_GBR_adm1.rds"))
+UK<-readRDS(file.path(".","GADM_2.8_GBR_adm1.rds"))
 UKmap<-fortify(UK)
 
-NOR<-readRDS(file.path("C:/Users/ggonzales/Dropbox/GAM_cod_MS/",
-                  "Data_Clean_Model/geoData","GADM_2.8_NOR_adm0.rds"))
+NOR<-readRDS(file.path(".","GADM_2.8_NOR_adm0.rds"))
 NORmap<-fortify(NOR)
 
 
@@ -141,8 +139,7 @@ plot.final<-ggplot()+
 
 # Including bathymetry on the plot ----------------------------------------
 #Loading depth grid
-depth.grid <- readAsciiGrid(file.path("C:/Users/ggonzales/Dropbox/GAM_cod_MS/",
-                            "Data_Clean_Model/geoData",
+depth.grid <- readAsciiGrid(file.path("./geoData",
                             "bath_asc.txt"))
 proj4string(depth.grid) <- proj4string(UK)
 depth.ras <- raster(depth.grid)

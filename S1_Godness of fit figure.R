@@ -10,10 +10,7 @@ rm(list = ls())
 library(ggplot2)
 
 #All data
-load(file.path("C:/Users/ggonzales/Dropbox/Backup/University of Aberdeen/",
-               "University_of_Aberdeen/MSc projects/Data/",
-               "Preparing data aggregated size classes/",
-               "Data up to 50cm with all ceros",
+load(file.path(".",
                "MODELS1.3.2.RData"))
 
 

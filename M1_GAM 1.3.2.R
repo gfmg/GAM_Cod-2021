@@ -11,7 +11,7 @@ library(ggplot2)
 
 #Year 2 as a factor
 
-setwd("C:/Users/ggonzales/Dropbox/GAM_cod_MS/Data_Clean_Model")
+setwd("")
 
 load("./data.pregam.RData")
 
@@ -85,20 +85,19 @@ fitvsresid
 
 
 vessel.resid<-ggplot()+
-geom_boxplot(data=data.pregam,aes(x=as.factor(vessel2),y=res.gam1.3.2.2deviance))+
+geom_boxplot(data=data.pregam,aes(x=as.factor(vessel2),
+                                  y=res.gam1.3.2.deviance))+
 ylab('')+
 xlab('Vessel')+
 theme(axis.title.x=element_text(margin=margin(10,0,0,0)))+
-theme(axis.title.y=element_text(margin=margin(0,20,0,0)),axis.title=element_text(size=12,face="bold")) 
+theme(axis.title.y=element_text(margin=margin(0,20,0,0)),
+      axis.title=element_text(size=12,face="bold"),
+      axis.ticks = element_blank(),
+      axis.text.x = element_blank()) 
 vessel.resid
 
-space.resid<-ggplot()+
-geom_point(data=data.pregam,aes(x=ShootLon,y=ShootLat,colour=res.gam1.3.2.pearson))+
-facet_grid(data.pregam$Year2~data.pregam$month)
-space.resid
-
 year.resid<-ggplot()+
-geom_boxplot(data=data.pregam,aes(x=as.factor(Year),y=res.gam1.3.2.2deviance))+
+geom_boxplot(data=data.pregam,aes(x=as.factor(Year),y=res.gam1.3.2.deviance))+
 ylab('')+
 xlab('Year')+
 theme(axis.title.x=element_text(margin=margin(10,0,0,0)))+
@@ -106,7 +105,7 @@ theme(axis.title.y=element_text(margin=margin(0,20,0,0)),axis.title=element_text
 year.resid   
 
 length.resid<-ggplot()+
-geom_boxplot(data=data.pregam,aes(x=lngtfactor.int,y=res.gam1.3.2.2deviance,group=lngtfactor.int),alpha=0.02)+
+geom_boxplot(data=data.pregam,aes(x=lngtfactor.int,y=res.gam1.3.2.deviance,group=lngtfactor.int),alpha=0.02)+
 ylab('Deviance residuals')+
 xlab('Length (cm)')+
 theme(axis.title.x=element_text(margin=margin(10,0,0,0)))+
@@ -114,7 +113,7 @@ theme(axis.title.y=element_text(margin=margin(0,20,0,0)),axis.title=element_text
 length.resid
 
 month.resid<-ggplot()+
-geom_boxplot(data=data.pregam,aes(x=as.factor(month),y=res.gam1.3.2.2deviance),alpha=0.02)+
+geom_boxplot(data=data.pregam,aes(x=as.factor(month),y=res.gam1.3.2.deviance),alpha=0.02)+
 ylab('')+
 xlab('Month')+
 theme(axis.title.x=element_text(margin=margin(10,0,0,0)))+
@@ -122,26 +121,22 @@ theme(axis.title.y=element_text(margin=margin(0,20,0,0)),axis.title=element_text
 month.resid
 
 gear.resid<-ggplot()+
-geom_boxplot(data=data.pregam,aes(x=as.factor(gear),y=res.gam1.3.2.2deviance),alpha=0.02)+
+geom_boxplot(data=data.pregam,aes(x=as.factor(gear),y=res.gam1.3.2.deviance),alpha=0.02)+
 ylab('Deviance residuals')+
 xlab('Gear')+
 theme(axis.title.x=element_text(margin=margin(10,0,0,0)))+
 theme(axis.title.y=element_text(margin=margin(0,20,0,0)),axis.title=element_text(size=12,face="bold"))
 gear.resid
 
-haul.resid<-ggplot()+
-geom_boxplot(data=data.pregam,aes(x=as.factor(Haul.Number),y=res.gam1.3.2.deviance))
-haul.resid
 
 depth.resid<-ggplot()+
-geom_point(data=data.pregam,aes(x=depth.geo.bin,y=res.gam1.3.2.2deviance),alpha=0.02)+
+geom_point(data=data.pregam,aes(x=depth.geo.bin,y=res.gam1.3.2.deviance),alpha=0.02)+
 ylab('Deviance residuals')+
 xlab('Depth (m)')+
 theme(axis.title.x=element_text(margin=margin(10,0,0,0)))+
 theme(axis.title.y=element_text(margin=margin(0,20,0,0)),axis.title=element_text(size=12,face="bold"))
 depth.resid
 
-acf(res.gam1.3.2.2deviance) #Clear autocrrelation
 
 
 #All residual plots together

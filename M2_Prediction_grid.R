@@ -8,7 +8,7 @@
 library(sp)
 library(raster)
 
-load("C:/Users/ggonzales/Dropbox/GAM_cod_MS/Data_Clean_Model/prediction.data.Rdata")
+load("./prediction.data.Rdata")
 
 ind.y=sort(unique(data.sub.bin$Year2))
 data.pred<-c()
