@@ -10,3 +10,8 @@ As a guide:
 * Files starting with "S" includes scripts containing the work included in the Supplementary materials.
 
 Several of the scripts are still under development and will be included shortly.
+
+## Pairwise plots of gear spatio-temporal overlaps
+
+![MTR vs SEN](/GIFplots/GearVolumes_MTR_vs_SEN.gif)
+
