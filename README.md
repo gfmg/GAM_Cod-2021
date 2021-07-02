@@ -13,7 +13,7 @@ Several of the scripts are still under development and will be included shortly.
 
 ## Complementary animated figures
 
-### pairwise plots of gear spatio-temporal overlaps
+### Pairwise plots of gear spatio-temporal overlaps
 
 Calculated spatio-temporal volumes around the data for four pairs of gears, including the IBTS survey (“GOV”). Hypervolumes are materialized by random points within each hypervolume (raw data not shown). 
 
@@ -21,6 +21,9 @@ The 3 axes are:
 * scaled latitude (“ShootLat.sc”); 
 * scaled longitude (“ShootLon.sc”) 
 * scaled time of year (“J.day.sc”).
+
+#### NTR vs GOV (IBTS)
+![NTR vs GOV](/GIFplots/GearVolumes_GOV_vs_NTR.gif)
 
 #### MTH vs NTR
 ![MTH vs NTR](/GIFplots/GearVolumes_NTR_vs_MTH.gif)
@@ -30,9 +33,6 @@ The 3 axes are:
 
 #### MTH vs MTN
 ![MTH vs MTN](/GIFplots/GearVolumes_MTN_vs_MTH.gif)
-
-#### NTR vs GOV (IBTS)
-![NTR vs GOV](/GIFplots/GearVolumes_GOV_vs_NTR.gif)
 
 #### MTR vs SEN
 ![MTR vs SEN](/GIFplots/GearVolumes_MTR_vs_SEN.gif)
