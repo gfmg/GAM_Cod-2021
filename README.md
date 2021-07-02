@@ -11,13 +11,13 @@ As a guide:
 
 Several of the scripts are still under development and will be included shortly.
 
-## Complementary figures
+## Complementary animated figures
 
-### Animated pairwise plots of gear spatio-temporal overlaps
+### pairwise plots of gear spatio-temporal overlaps
 
 Calculated spatio-temporal volumes around the data for four pairs of gears, including the IBTS survey (“GOV”). Hypervolumes are materialized by random points within each hypervolume (raw data not shown). 
 
-\\
+\
 
 The 3 axes are: 
 * scaled latitude (“ShootLat.sc”); 
