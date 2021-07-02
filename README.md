@@ -13,7 +13,7 @@ Several of the scripts are still under development and will be included shortly.
 
 ## Complementary animated figures
 
-### Pairwise plots of gear spatio-temporal overlaps
+### Pairwise plots of gear spatio-temporal overlaps (selected examples)
 
 Calculated spatio-temporal volumes around the data for four pairs of gears, including the IBTS survey (“GOV”). Hypervolumes are materialized by random points within each hypervolume (raw data not shown). 
 
