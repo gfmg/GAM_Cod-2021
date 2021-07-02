@@ -17,8 +17,6 @@ Several of the scripts are still under development and will be included shortly.
 
 Calculated spatio-temporal volumes around the data for four pairs of gears, including the IBTS survey (“GOV”). Hypervolumes are materialized by random points within each hypervolume (raw data not shown). 
 
-\
-
 The 3 axes are: 
 * scaled latitude (“ShootLat.sc”); 
 * scaled longitude (“ShootLon.sc”) 
