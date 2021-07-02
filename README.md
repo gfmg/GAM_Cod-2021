@@ -1,6 +1,6 @@
 # Spatiotemporal-Cod 🐟
 
-This repository contains the R code used to implement the analysis and develop the figures included in the manuscript: 
+This repository contains the R code used to implement the analysis and develop the figures included in the [manuscript](https://www.sciencedirect.com/science/article/pii/S016578362100182X): 
 
 > "Gonzalez, G.M., Wiff, R., Marshall C.T., Cornulier, T. 2021. Estimating spatio-temporal distribution of fish and gear selectivity functions from pooled scientific survey and commercial fishing data"  
 
